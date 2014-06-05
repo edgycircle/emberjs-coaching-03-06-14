@@ -1,0 +1,34 @@
+html, body {
+  margin: 20px;
+}
+
+.weeks {
+  background-color: grey;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.viewport {
+  position: absolute;
+  left: -100px;
+  width: 1000px;
+}
+
+.week {
+  background-color: #efefef;
+  width: 80px;
+  margin: 0 10px;
+  float: left;
+}
+
+.left .week {
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-100px);
+}
+
+.right .week {
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(100px);
+}

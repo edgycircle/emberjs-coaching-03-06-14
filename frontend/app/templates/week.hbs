@@ -1,0 +1,18 @@
+{{link-to '<' 'week' previous}}<br>
+{{link-to '>' 'week' next}}<br>
+
+<hr>
+
+<div class="weeks"{{bind-attr class=":weeks left:left right:right"}}>
+  <div class="viewport">
+  {{#each}}
+    <div class="week">
+      {{number}}
+    </div>
+  {{/each}}
+  </div>
+</div>
+
+<hr>
+
+{{link-to 'Home' 'index'}}
